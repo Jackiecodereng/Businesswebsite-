@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css link-->
+    <link rel="stylesheet" href="style.css">
+    <!--    owl carousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+          integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+          integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!--    box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>new project</title>
+</head>
+<body>
+<!--nav bar-->
+<nav class="navbar navbar-expand-lg navbar-light  py-3 bg-white sticky-top"> <!--class py-3 adds space top and bottom-->
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logo" src="images/automation%20(1).png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                    <!-- the reason we need the section id is so that when we click on the navbar it takes us on the page-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#teams">Team</a>
+                </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <button class="btn btn-primary ms-lg-3">Join Us</button>
+            <!-- this is a button ms-3 represents a margin start of3-->
+        </div>
+    </div>
+</nav>
+<!--hero section-->
+<div class="hero vh-100 d-flex align-items-center" id="home">
+    <!-- vh100 gives the hero section to occupy a height of 100 while dflex give it a flex moves it to one side and align items center ensures item is a the center considering height -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 mx-auto text-center">
+                <!-- the class mx auto now centres the div based on width while text-center centers based on the div-->
+                <h1 class="display-4 text-white"> Build Robust Landing Pages.</h1>
+                <!-- the display4 makes the h1 text larger-->
+                <p class="text-white my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur culpa
+                    dignissimos minus nam, non rem! Aspernatur at doloribus quibusdam, rerum sapiente temporibus velit
+                    voluptate? A aperiam architecto maiores quo ullam.</p>
+                <a href="#" class="btn me-2 btn-primary">Get Started</a>
+                <!-- me-2 gives a left space for the two buttons primary is the colour of the button-->
+                <a href="#" class="btn btn-outline-light">My Portfolio</a>
+                <!-- the btn-outline_light makes the button have bright color-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--services-->
+<section id="services">
+    <div class="container">
+        <div class="row g-4"> <!-- gives a vertical space of 4 between the intro p and boxes -->
+            <div class="col-md-8 mx-auto text-center">
+                <h6 class="text-primary">Services</h6>
+                <h1>Our Services</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur distinctio, doloribus
+                    eos est harum ipsam, laborum natus nesciunt nobis nostrum nulla officia optio possimus voluptas?
+                    Beatae debitis ut vel.</p>
+            </div>
+
+            <div class="row ">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="icon_box">
+                            <i class='bx bxs-cat'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Services</h5>
+                        <!-- the class mt-4 gives a space between the icon and h5 mb-2 is margin bottom and gives space between p and div-->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias aliquid aperiam
+                            deleniti dolores earum eos est i</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="icon_box">
+                            <i class='bx bxs-happy'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Services</h5>
+                        <!-- the class mt-4 gives a space between the icon and h5 mb-2 is margin bottom and gives space between p and div-->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias aliquid aperiam
+                            deleniti dolores earum eos est i</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="icon_box">
+                            <i class='bx bxs-parking'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Services</h5>
+                        <!-- the class mt-4 gives a space between the icon and h5 mb-2 is margin bottom and gives space between p and div-->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias aliquid aperiam
+                            deleniti dolores earum eos est i</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service card-effect">
+                    <div class="icon_box">
+                        <i class='bx bxs-hot'></i>
+                    </div>
+                    <h5 class="mt-4 mb-2">Services</h5>
+                    <!-- the class mt-4 gives a space between the icon and h5 mb-2 is margin bottom and gives space between p and div-->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias aliquid aperiam
+                        deleniti dolores earum eos est i</p>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service card-effect">
+                    <div class="icon_box">
+                        <i class='bx bxs-pear'></i>
+                    </div>
+                    <h5 class="mt-4 mb-2">Services</h5>
+                    <!-- the class mt-4 gives a space between the icon and h5 mb-2 is margin bottom and gives space between p and div-->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias aliquid aperiam
+                        deleniti dolores earum eos est i</p>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="service card-effect">
+                    <div class="icon_box">
+                        <i class='bx bxs- bxs-meteor'></i>
+                    </div>
+                    <h5 class="mt-4 mb-2">Services</h5>
+                    <!-- the class mt-4 gives a space between the icon and h5 mb-2 is margin bottom and gives space between p and div-->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias aliquid aperiam
+                        deleniti dolores earum eos est i</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--features-->
+<!--w-100 means width of 100%-->
+<section class="row w-100 py-0 bg-light" id="features">
+    <div class="col-lg-6 col-img"></div>
+    <div class="col-lg-6 py-5"><!-- py5gives space between the title and text while py0 removes the top space-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <!--used to move the image one column practical case thhoese two divs had a great space but it increased-->
+                    <h6 class="text-primary">Why Choose Us?</h6>
+                    <h1 class="text-center">Best Solutions For Your Business.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur distinctio,
+                        doloribus
+                        eos est harum ipsam, laborum natus nesciunt nobis nostrum nulla officia optio possimus
+                        voluptas?
+                        Beatae debitis ut vel.</p>
+                    <div class="feature d-flex mt-5">
+                        <div class="icon_box me-3">
+                            <i class='bx bxs-doughnut-chart'></i>
+                        </div>
+                        <div>
+                            <h5 class=" mb-2">Features</h5>
+                            <!-- the class mt-4 gives a space between the icon and h5 mb-2 is margin bottom and gives space between p and div-->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. aperiam
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature d-flex mt-5">
+                        <div class="icon_box me-3">
+                            <i class='bx bxs-comment-edit'></i>
+                        </div>
+                        <div>
+                            <h5 class=" mb-2">Features</h5>
+                            <!-- the class mt-4 gives a space between the icon and h5 mb-2 is margin bottom and gives space between p and div-->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. aperiam
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature d-flex mt-5">
+                        <div class="icon_box me-3">
+                            <i class='bx bxs-user-circle'></i>
+                        </div>
+                        <div>
+                            <h5 class=" mb-2">Features</h5>
+                            <!-- the class mt-4 gives a space between the icon and h5 mb-2 is margin bottom and gives space between p and div-->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. aperiam
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- portfolio-->
+<section id="portfolio">
+    <div class="container-fluid"><!-- the container fluid ensures items fit perfectly in the section-->
+        <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center">
+                <h6 class="text-primary">Projects</h6>
+                <h1>our Recent Work</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores at corporis, deleniti dolor
+                    dolores excepturi fugiat itaque iusto non perferendis quam quo quos sapiente suscipit, voluptatibus.
+                    Aliquid blanditiis laborum saepe!</p>
+            </div>
+        </div>
+        <div class="row g-4"> <!-- g-4 gives the center space between the divs-->
+            <div class="col-lg-4 col-sm-6">
+                <div class="project">
+                    <img src="images/ps2.jpg" alt="">
+                    <div class="overlay">
+                      <div>
+                          <h4 class="text-white">Project Title</h4>
+                        <h6 class="text-white ">Website Design </h6>
+                          <!-- i encountered an error where the text was horizontal other than verticcal to avoid this error ensure the h4 and h6 are in a div-->
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="project">
+                    <img src="images/c1.jpg" alt="">
+                    <div class="overlay">
+                      <div>
+                          <h4 class="text-white">Project Title</h4>
+                        <h6 class="text-white ">Website Design </h6>
+                          <!-- i encountered an error where the text was horizontal other than verticcal to avoid this error ensure the h4 and h6 are in a div-->
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="project">
+                    <img src="images/c3.jpg" alt="">
+                    <div class="overlay">
+                      <div>
+                          <h4 class="text-white">Project Title</h4>
+                        <h6 class="text-white ">Website Design </h6>
+                          <!-- i encountered an error where the text was horizontal other than verticcal to avoid this error ensure the h4 and h6 are in a div-->
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+                <div class="col-lg-4 col-sm-6">
+                <div class="project">
+                    <img src="images/c4.jpg" alt="">
+                    <div class="overlay">
+                      <div>
+                          <h4 class="text-white">Project Title</h4>
+                        <h6 class="text-white ">Website Design </h6>
+                          <!-- i encountered an error where the text was horizontal other than verticcal to avoid this error ensure the h4 and h6 are in a div-->
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+        <div class="col-lg-4 col-sm-6">
+                <div class="project">
+                    <img src="images/b3.jpg" alt="">
+                    <div class="overlay">
+                      <div>
+                          <h4 class="text-white">Project Title</h4>
+                        <h6 class="text-white ">Website Design </h6>
+                          <!-- i encountered an error where the text was horizontal other than verticcal to avoid this error ensure the h4 and h6 are in a div-->
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+        <div class="col-lg-4 col-sm-6">
+                <div class="project">
+                    <img src="images/b2.jpg" alt="">
+                    <div class="overlay">
+                      <div>
+                          <h4 class="text-white">Project Title</h4>
+                        <h6 class="text-white ">Website Design </h6>
+                          <!-- i encountered an error where the text was horizontal other than verticcal to avoid this error ensure the h4 and h6 are in a div-->
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- pricing -->
+<section id="pricing" class="bg-light">
+    <div class="container-fluid">
+        <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center">
+                <h6 class="text-primary">Pricing</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto culpa dolorem eaque exercitationem facilis illo ipsum itaque labore laboriosam nemo odio, placeat quo similique sint, suscipit veniam vero, voluptatem. Accusantium?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="pricing card-effect"> <!-- the class card effect gives the card styling ie nmakes the card-->
+                    <h6 class="text-center" >Starter</h6>
+                    <h1 class="text-center">$99</h1>
+                    <hr> <!-- this gives a horizontal line-->
+                    <ul class = "list-unstyled mb-4"> <!-- the class list unstyled removes the bullets.-->
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            Premium Support
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                           30+ Webmaster Tools.
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            Drag & Drop Builder.
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            Ecommerce store
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                           Wordpress plugins.
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+            </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="pricing card-effect"> <!-- the class card effect gives the card styling ie nmakes the card-->
+                    <h6 class="text-center" >Starter</h6>
+                    <h1 class="text-center">$199</h1>
+                    <hr> <!-- this gives a horizontal line-->
+                    <ul class = "list-unstyled mb-4"> <!-- the class list unstyled removes the bullets.-->
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            Premium Support
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                           30+ Webmaster Tools.
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            Drag & Drop Builder.
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            Ecommerce store
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                           Wordpress plugins.
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+            </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="pricing card-effect"> <!-- the class card effect gives the card styling ie nmakes the card-->
+                    <h6 class="text-center" >Starter</h6>
+                    <h1 class="text-center">$299</h1>
+                    <hr> <!-- this gives a horizontal line-->
+                    <ul class = "list-unstyled mb-4"> <!-- the class list unstyled removes the bullets.-->
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            Premium Support
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                           30+ Webmaster Tools.
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            Drag & Drop Builder.
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            Ecommerce store
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                           Wordpress plugins.
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+            </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="pricing card-effect"> <!-- the class card effect gives the card styling ie nmakes the card-->
+                    <h6 class="text-center" >Starter</h6>
+                    <h1 class="text-center">$399</h1>
+                    <hr> <!-- this gives a horizontal line-->
+                    <ul class = "list-unstyled mb-4"> <!-- the class list unstyled removes the bullets.-->
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            Premium Support
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                           30+ Webmaster Tools.
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            Drag & Drop Builder.
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                            Ecommerce store
+                        </li>
+                        <li>
+                            <i class='bx bxs-check-circle'></i>
+                           Wordpress plugins.
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="teams">
+    <div class="container">
+        <div class="row mb-5">
+           <div class="col-md-8 mx-auto text-center">
+               <h6 class="text-primary">
+                   Team
+               </h6>
+               <h1>Meet Our Crew Members</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem earum harum laborum sunt. Atque, cupiditate eligendi explicabo illo maiores maxime minima nobis non obcaecati officia, quisquam repellendus suscipit vero!</p>
+           </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-3 col-sm-6">
+                <div class="team-member card-effect">
+                    <img src="images/ps7.jpg" alt="">
+                    <h5 class = "mt-4">Jackie G.</h5>
+                    <p class="mb-4 ">Web Development</p>
+                    <div class="social-links">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                         <a href="#"><i class='bx bxl-twitter'></i></a>
+                         <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                         <a href="#"><i class='bx bxl-snapchat'></i></a>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-3 col-sm-6">
+                <div class="team-member card-effect">
+                    <img src="images/ps7.jpg" alt="">
+                    <h5 class="mt-4">Jackie G.</h5>
+                    <p class="mb-4">Web Development</p>
+                    <div class="social-links">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                         <a href="#"><i class='bx bxl-twitter'></i></a>
+                         <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                         <a href="#"><i class='bx bxl-snapchat'></i></a>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-3 col-sm-6">
+                <div class="team-member card-effect">
+                    <img src="images/ps7.jpg" alt="">
+                    <h5 class="mt-4">Polycarp Keru</h5>
+                    <p class="mb-4">Air Quality Technician</p>
+                    <div class="social-links">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                         <a href="#"><i class='bx bxl-twitter'></i></a>
+                         <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                         <a href="#"><i class='bx bxl-snapchat'></i></a>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-3 col-sm-6">
+                <div class="team-member card-effect">
+                    <img src="images/ps7.jpg" alt="">
+                    <h5 class="mt-4">Jackie G.</h5>
+                    <p class="mb-4">Web Development</p>
+                    <div class="social-links">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                         <a href="#"><i class='bx bxl-twitter'></i></a>
+                         <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                         <a href="#"><i class='bx bxl-snapchat'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<section id="blog" class="bg-light">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center">
+                <h6 class="text-primary">Blog</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores assumenda, consequatur corporis delectus dicta expedita inventore laboriosam natus nesciunt placeat possimus quasi quos ratione recusandae repellendus soluta suscipit temporibus?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="blog-post card-effect">
+                    <img src="images/c3.jpg" alt="">
+                    <h5 class="mt-3"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda delectus dolore doloremque dolorum eligendi excepturi facilis incidunt minus molestias, nisi non nostrum officia quos recusandae rem, tempore veniam. Eaque, sint!</p>
+                </div>
+            </div>
+             <div class="col-md-4">
+                <div class="blog-post card-effect">
+                    <img src="images/c3.jpg" alt="">
+                    <h5 class="mt-3"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda delectus dolore doloremque dolorum eligendi excepturi facilis incidunt minus molestias, nisi non nostrum officia quos recusandae rem, tempore veniam. Eaque, sint!</p>
+                </div>
+            </div>
+             <div class="col-md-4">
+                <div class="blog-post card-effect">
+                    <img src="images/c3.jpg" alt="">
+                    <h5 class="mt-3"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda delectus dolore doloremque dolorum eligendi excepturi facilis incidunt minus molestias, nisi non nostrum officia quos recusandae rem, tempore veniam. Eaque, sint!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- contact-->
+</section>
+<section id="contact">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center">
+                <h6 class="text-primary">
+                    Contact
+                </h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consectetur rem tempore. Aspernatur dolorem doloribus fugiat ipsam libero neque, placeat tenetur! Aliquam aliquid commodi maxime placeat recusandae ullam vel? Fugit!</p>
+            </div>
+        </div>
+        <form action="" class="row g-3 justify-content-center"> <!--g-3 gives space between the rows while jcs centers the whole form-->
+            <div class="col-md-5">
+                <input type="text" class="form-control" placeholder="Full Name">
+            </div>
+            <div class="col-md-5">
+                <input type="text" class="form-control" placeholder="Enter Your Email Address">
+            </div>
+            <div class="col-md-10">
+                <input type="text" class="form-control" placeholder="Enter Subject">
+            </div>
+            <div class="col-md-10">
+                <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Enter Message"></textarea>
+            </div>
+            <div class="col-md-10 d-grid"> <!--the class d-grid helps the button fit fully below the tex area-->
+                <button class="btn btn-primary">Contact</button>
+            </div>
+        </form>
+    </div>
+</section>
+<!--footer-->
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <img  class="logo" src="images/automation%20(2).png" alt="">
+                </div>
+                <div class="col-md-2">
+                    <h5 class="text-white">Brand</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                 <div class="col-md-2">
+                        <h5 class="text-white">More</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">FAQS</a></li>
+                        <li><a href="#">Privacy& Policy</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Shipment</a></li>
+                    </ul>
+                    </div>
+                 <div class="col-md-4">
+                        <h5 class="text-white">Pages</h5>
+                    <ul class="list-unstyled">
+                        <li>Address</li>
+                        <li>Dakota</li>
+                        <li>Email:jacklinegathoni46@gmail.com</li>
+                        <li>phone:0798017611</li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+
+        </div>
+   <div class="footer-bottom py-3">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-6">
+                   @2020 copyright all right reserved
+               </div>
+               <div class="col-md-6">
+                     <div class="social-links">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                         <a href="#"><i class='bx bxl-twitter'></i></a>
+                         <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                         <a href="#"><i class='bx bxl-snapchat'></i></a>
+                    </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

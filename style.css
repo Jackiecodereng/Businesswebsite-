@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Sora:wght@100..800&display=swap');
+/*Defining styles in :root makes them available globally throughout the document.You can use this variable throughout your CSS by referencing it as var(--primary).*/
+:root {
+    --primary: #0d6efd;
+    --dark:#21252f;
+    --body:#888;
+    --moz-box-shadow: 0 8px 22px 0 rgba(0,0,0,0.1);
+}
+a{
+    color: var(--dark);
+    text-decoration: none;
+}
+body {
+    font-family: "Sora", sans-serif;
+    line-height: 1.6;
+    color: var(--body);
+}
+h1,h2,h3,h4,h5,h6, .display-4 {
+    color: var(--dark
+    );
+    font-weight: 700;
+}
+/* navbar*/
+.navbar .logo{
+    width:60px;
+}
+.navbar .nav-link{
+    font-size: 14px;
+      font-weight:700;
+}
+.btn{
+    padding:14px 18px;
+    border-width:2px;
+    border-radius:0;
+}
+.navbar{
+   box-shadow: var(--moz-box-shadow);
+}
+
+/* hr=ero section*/
+.hero{
+    background-image: url("images/ps4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position:relative; /*to adjust an element's position without affecting the layout of surrounding elements and to serve as a reference for absolutely positioned child elements.*/
+    z-index:2; /*Use z-index to control the stacking order of overlapping elements, ensuring that elements with higher z-index values are displayed on top of those with lower values.*/
+}
+/*placing an overlay over image*/
+.hero::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 20, 51, 0.8);
+    z-index: -1;
+}
+/* the section*/
+section{
+    padding-top:120px;
+    padding-bottom:120px;
+}
+/*services*/
+.card-effect{
+    box-shadow: var(--moz-box-shadow);
+    background-color:white;
+    padding:25px;
+    transition:0.35s;
+}
+.card-effect:hover
+{
+    box-shadow:none;
+    transform:translateY(5px);/* is used to move an element vertically along the Y-axis by 5 pixels. In this case, it moves the element downward by 5 pixels. */
+}
+.icon_box{
+    width:54px;
+    height:54px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--primary);
+    color:white;
+    font-size:32px;
+    border-radius:100px;/* which is same as 50%*/
+    flex: none;/*doesnt shrink or expand the icon*/
+}
+.service{
+    position:relative;
+    z-index:2;
+    overflow: hidden;
+
+}
+.service::after
+{
+    content: "";
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: var(--primary);
+    z-index:-1;
+    opacity:0;
+    transition: all 0.4s;
+}
+.service:hover h5,
+.service:hover p{
+    color:white;
+}
+.service:hover .icon_box{
+    background-color:white;
+    color:var(--primary);
+}
+/* the after effrect*/
+.service:hover::after{
+    opacity:1;
+    top:0;
+}
+/*features*/
+.col-img{
+    background-image: url("images/ps3.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+/* portfolio*/
+img{
+    width:100%; /* to make the image responsive and avoid being too large*/
+}
+.project{
+    position:relative;
+    overflow: hidden;
+}
+.project .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(21, 20, 51, 0.8);
+    padding: 30px;
+    display:flex;
+    align-items: flex-end;
+    transition: all 0.4s;
+    opacity:0;
+}
+.project img{
+     transition: all 0.4s;
+      height:254px;
+
+}
+.project:hover .overlay{
+   opacity:1;
+}
+.project:hover img{
+    transform:scale(1.1);
+}
+/*pricing*/
+.pricing i{
+    font-size:20px;
+    color:var(--primary);
+}
+.pricing ul li{
+    margin:8px;
+}
+.pricing .btn{
+    margin-left:50px;
+}
+ /* teams*/
+.team-member img{
+    width:125px;
+    height:125px;
+    border-radius: 100px;
+}
+.social-links {
+    display:flex;
+ justify-content: center;
+}
+.social-links a{
+    width:34px;
+    height:34px;
+    background-color: var(--primary);
+
+    border-radius: 100px;
+    color:white;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    transition:all 0.4s;
+   border: 2px solid var(--primary)  /* creates the blue outline effect on hover*/
+
+}
+.social-links a:hover{
+    color: var(--primary);
+    background: transparent;
+    border-color: var(--primary);
+}
+
+/*contact*/
+form input.form-control{
+    height:56px;
+
+}
+form .form-control{
+    border-radius: 0;
+    border:transparent;
+    background-color:rgba(0,0,0,0.02);
+}
+
+/*footer*/
+.footer-top {
+    padding-top:90px;
+    padding-bottom:90px;
+    background-color:var(--dark);
+}
+.footer-top a{
+    color:var(--body);
+}
+.footer-top a:hover{
+    color:#ffffff
+}
+.footer-bottom {
+background-color:#242933;
+}
+.logo{
+    width:100px;
+    height:50%;
+}
